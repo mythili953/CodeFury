@@ -1655,7 +1655,7 @@ justify-content: center;
   text-decoration: none;
 }
 .contact h1{
-  color: antiquewhite;
+  color: #ffffff;
   margin : 5px;
   margin-left : 5px;
   font-size: 30px;
@@ -1684,7 +1684,7 @@ justify-content: center;
   padding: 8%;
 }
 .sponsers h1
-{
+{   color:#ffffff;
   margin-top: 5%;
  text-align: center;
   
@@ -1727,7 +1727,7 @@ justify-content: center;
 }
 .bg h2
 {
-  color: antiquewhite;
+  color: #ffffff;
   font-size: 30px;
   margin-top: 5px;
   margin-bottom: 15px;
