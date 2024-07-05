@@ -1619,7 +1619,6 @@ section {
     margin-bottom: 80px;
 }
 
-/* css for contact */
 .contact img
 {
   height:120px;
@@ -1629,8 +1628,9 @@ section {
   display: flex;
 flex-direction: column;
 justify-content: center;
- padding: 0;
- margin: 0;
+padding: 8%;
+margin-bottom: 200px;
+
 }
 .people
 {
@@ -1682,9 +1682,10 @@ justify-content: center;
   justify-content: center;
   align-items: center;
   padding: 8%;
+
 }
 .sponsers h1
-{   color:#ffffff;
+{
   margin-top: 5%;
  text-align: center;
   
@@ -1777,6 +1778,15 @@ align-items: center;
   margin-left: 0%;
 
 }
+.names{
+ 
+  flex-direction: column;
+ 
+  
+   }
+   .contact{
+    margin-bottom: 300px;
+   }
 
 }
 @media screen and (max-width: 1000px) {
@@ -1791,3 +1801,122 @@ align-items: center;
       font-size: 21px;
   }
   }
+
+ /* css for footer */
+body{
+  min-height: 100%;
+  position: relative;
+}
+ 
+ footer
+ {
+  position: absolute;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  border-top: 3px double #9742ff;
+ }
+  .footer-socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .insta{
+display:flex;
+justify-content: center;
+padding:10px;
+  }
+  .facebook{
+    display:flex;
+    justify-content: center;
+    padding:10px;
+      }
+      .mail{
+        display:flex;
+        justify-content: center;
+        padding:10px;
+          }
+ .footer-socials img
+ {
+   height:25px;
+   width:25px;
+ }
+ .footer-bottom
+ { 
+  padding: 10px;
+  background-color: #000000;
+   
+ }
+ 
+ .footer-bottom h3{
+  margin-top: 20px;
+ }
+ .names{
+display: flex;
+flex-direction: row;
+justify-content: center;
+padding: 5px;
+
+ }
+.name{
+  color: #9742ff;
+ 
+}
+#heart {
+  width: 30px;
+  height: 30px;
+  background-color: #9742ff;
+  margin: 20px auto; /* Adjusted margin for centering */
+  position: relative;
+  transform: rotate(45deg);
+  animation: example 0.3s linear 1s infinite alternate;
+  z-index: 0;
+}
+
+#heart:after,
+#heart:before {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  background-color: #9742ff;
+  box-shadow: 0 0 7px #b27cf5(213, 9, 60, 1);
+  animation: examp 0.5s linear 1s infinite alternate;
+}
+
+#heart:after {
+  top: 0;
+  left: -15px; /* Adjusted positioning */
+  z-index: 2;
+}
+
+#heart:before {
+  top: -15px; /* Adjusted positioning */
+  right: 0;
+  z-index: -1;
+}
+
+@keyframes example {
+  0% {
+    transform: scale(1, 1) rotate(45deg);
+    box-shadow: 0 0 7px #b27cf5(213, 9, 60, 1);
+  }
+  100% {
+    transform: scale(1.1, 1.1) rotate(45deg);
+    box-shadow: 0 0 7px #5a259c(213, 9, 60, 1);
+  }
+}
+
+@keyframes examp {
+  0% {
+    box-shadow: 0 0 7px #b27cf5(213, 9, 60, 1);
+  }
+  100% {
+    box-shadow: 0 0 7px #5a259c(213, 9, 60, 1);
+  }
+}
