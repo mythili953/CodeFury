@@ -1773,6 +1773,9 @@ section {
     .footer-socials{
       align-items:start;
   }
+  .footer-socials a{
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 1000px) {
   .contact img {
@@ -1830,11 +1833,12 @@ body{
  }
  .footer-bottom
  { 
-  padding: 8px;
   background-color: #000000;
+  padding-bottom: 10px;
  }
  .footer-bottom h3{
-  margin-top: 15px;
+  margin-top: 10px;
+  padding:10px;
  }
  .names{
 display: flex;
