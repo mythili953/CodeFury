@@ -1775,6 +1775,12 @@ section {
   }
   .footer-socials a{
     font-size: 12px;
+    padding: 5px;
+  }
+  .footer-bottom h3
+  {
+    font-size: 13px;
+    padding: 10px;
   }
 }
 @media screen and (max-width: 1000px) {
