@@ -1619,28 +1619,26 @@ section {
     margin-bottom: 80px;
 }
 
+/* css for contacts */
 .contact img
 {
   height:120px;
- width:fit-content;
+  width:fit-content;
 }
 .contact{
   display: flex;
-flex-direction: column;
-justify-content: center;
-padding: 8%;
-margin-bottom: 200px;
-
+  flex-direction: column;
+  justify-content: center;
+  padding: 8%;
+  margin-bottom: 200px;
 }
 .people
 {
   display: flex;
- 
 }
 .people :hover{
   transform: scale(1.02);
 }
-
 .contact a{
   color: #ffffff;
   margin : 5px;
@@ -1664,17 +1662,12 @@ margin-bottom: 200px;
 .chair :hover
 {
   cursor: grab;
- 
 }
 .vice :hover
 {
   cursor: grab;
- 
 }
-
-
-
-
+/* css for sponsors */
 .sponsers
 {
   display: flex;
@@ -1682,13 +1675,11 @@ margin-bottom: 200px;
   justify-content: center;
   align-items: center;
   padding: 8%;
-
 }
 .sponsers h1
 {
   margin-top: 8%;
  text-align: center;
-  
 }
 .bg {
   width:500px;
@@ -1752,49 +1743,41 @@ margin-bottom: 200px;
 @media screen and (max-width: 660px) {
   .people
 {
-flex-direction: column; 
-align-items: center;
+      flex-direction: column; 
+      align-items: center;
 }
 .bg {
-  width:300px;
-  height: 200px;
+      width:300px;
+      height: 200px;
 }
 .contact a
 {
-  font-size: 12px;
+      font-size: 12px;
 }
-.sponsers img {
-  width:230px;
-  height: 80px;
-}
-.chair{
- 
-  margin-right: 0%;
- 
-  
-}
-.vice{
- 
-  margin-left: 0%;
-
-}
-.names{
- 
-  flex-direction: column;
- 
-  
-   }
-   .contact{
-    margin-bottom: 300px;
-   }
-
+  .sponsers img {
+      width:230px;
+      height: 80px;
+  }
+  .chair{
+     margin-right: 0%;
+  }
+  .vice{
+      margin-left: 0%;
+  }
+  .names{
+      flex-direction: column;
+  }
+  .contact{
+     margin-bottom: 300px;
+  }
+    .footer-socials{
+      align-items:start;
+  }
 }
 @media screen and (max-width: 1000px) {
   .contact img {
-  
       height: 90px;
       width: fit-content;
-  
   }
   .contact a
   {
@@ -1807,7 +1790,6 @@ body{
   min-height: 100%;
   position: relative;
 }
- 
  footer
  {
   position: absolute;
@@ -1822,23 +1804,24 @@ body{
   .footer-socials{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
+    align-items: center;
   }
   .insta{
-display:flex;
-justify-content: center;
-padding:10px;
+    display:flex;
+    justify-content: left;
+    padding:10px;
   }
   .facebook{
     display:flex;
-    justify-content: center;
+    justify-content: left;
     padding:10px;
-      }
-      .mail{
-        display:flex;
-        justify-content: center;
-        padding:10px;
+ }
+.mail
+{
+   display:flex;
+  justify-content: left;
+  padding:10px;
           }
  .footer-socials img
  {
@@ -1847,36 +1830,31 @@ padding:10px;
  }
  .footer-bottom
  { 
-  padding: 10px;
+  padding: 8px;
   background-color: #000000;
-   
  }
- 
  .footer-bottom h3{
-  margin-top: 20px;
+  margin-top: 15px;
  }
  .names{
 display: flex;
 flex-direction: row;
 justify-content: center;
 padding: 5px;
-
  }
 .name{
   color: #9742ff;
- 
 }
 #heart {
   width: 30px;
   height: 30px;
   background-color: #9742ff;
-  margin: 20px auto; /* Adjusted margin for centering */
+  margin: 20px auto; 
   position: relative;
   transform: rotate(45deg);
   animation: example 0.3s linear 1s infinite alternate;
   z-index: 0;
 }
-
 #heart:after,
 #heart:before {
   width: 30px;
@@ -1888,15 +1866,13 @@ padding: 5px;
   box-shadow: 0 0 7px #b27cf5(213, 9, 60, 1);
   animation: examp 0.5s linear 1s infinite alternate;
 }
-
 #heart:after {
   top: 0;
-  left: -15px; /* Adjusted positioning */
+  left: -15px; 
   z-index: 2;
 }
-
 #heart:before {
-  top: -15px; /* Adjusted positioning */
+  top: -15px;
   right: 0;
   z-index: -1;
 }
