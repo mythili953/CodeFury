@@ -1507,11 +1507,12 @@ section {
 
   .question h3 {
     font-size: 2rem;
-    padding: auto;
+    padding-left: 25px;
   }
 
   .answer p {
     font-size: 1.5rem;
+    padding-left: 25px;
   }
   .question svg{
      visibility: hidden;
