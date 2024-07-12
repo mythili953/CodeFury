@@ -437,16 +437,19 @@ body {
   
   
     text-align: center; /* Centers the div horizontally */
+    
 
   }
 
   .image-wrapper {
+    gap: 5px;
     display: flex; /* Flexbox to arrange images side by side */
     justify-content: center; /* Centers the images horizontally inside the image-wrapper */
-}
+  }
+
 
 .image-wrapper img {
-  margin: 0 70px; /* Adds some space between the images */
+  margin: 0 40px; /* Adds some space between the images */
    width: 60px;
   
    
@@ -454,8 +457,46 @@ body {
    
 }
 .image-wrapper1 img{
-  width: 160px;
+  width: 150px;
   margin: auto;
+}
+
+
+.pre-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.pre-container-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pre-container-items li {
+  list-style: none;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.pre-container-time {
+  margin-left: 10px;
+}
+
+ion-icon {
+  font-size: 24px;
+}
+
+.image-container{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 40px;
+
 }
   
   /*about*/
