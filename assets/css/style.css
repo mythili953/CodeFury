@@ -779,7 +779,7 @@ body {
           border-radius: 30px;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
           overflow: hidden;
-          max-height: 3500px;
+          max-height: 5500px;
           
           width: 100%;
           margin: auto;
@@ -792,7 +792,7 @@ body {
       .card-content {
           padding: 20px;
           font-weight: 300;
-          max-height: 3500px;
+          max-height: 5500px;
       }
       .card-title {
           font-size: 1.5em;
@@ -805,7 +805,7 @@ body {
           font-size: 1em;
           color: white;
           display: none;
-          max-height: 3500px;
+          max-height: 5500px;
       }
       .read-more2 {
           color: white;
@@ -816,12 +816,12 @@ body {
           .news-card {
               display: flex;
               flex-direction: row;
-              max-height: 3500px;
+              max-height: 5500px;
           }
           .card-content {
               width: 70%;
               padding: 20px;
-              max-height: 3500px;
+              max-height: 5500px;
           }
           .btn {
               width: 30%;
@@ -836,7 +836,7 @@ body {
               display: block;
               max-width: 100%;
               margin: 10px;
-              max-height: 3500px;
+              max-height: 5500px;
           }
       }
 
