@@ -1,18 +1,4 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
 
@@ -470,7 +456,18 @@ body {
   margin: auto;
 }
   
-  
+  /*about*/
+.about-container{
+  max-width: 1780px; /* Limit the width of the text container */
+  margin: 0 auto;
+  padding: 50px;
+
+}
+
+.about-container p{
+  text-align: justify; /* Justify the text */
+  margin-bottom: 20px;
+ }
     
 
   
