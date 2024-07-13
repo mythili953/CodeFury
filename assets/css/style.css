@@ -877,9 +877,11 @@ ion-icon {
       }
       @media (max-width: 767px) {
           .news-card {
-              display: block;
-              max-width: 100%;
-              margin: 10px;
+              display: flex;
+              flex-direction: column;
+              width: 300px;
+              margin: 10px 0;
+              padding: 0px;
               max-height: 15500px;
           }
       }

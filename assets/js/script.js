@@ -14,7 +14,7 @@ let minItem = document.querySelector("#min");
 let secItem = document.querySelector("#sec")
 
 let countDown = ()=>{
-    let futureDate = new Date("31 July 2024");
+    let futureDate = new Date("10 August 2024");
     let currentDate = new Date();
     let myDate = futureDate - currentDate;
     let days = Math.floor(myDate/1000/60/60/24);
