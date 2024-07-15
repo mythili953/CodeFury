@@ -1890,7 +1890,7 @@ section {
   }
   .footer-bottom h3
   {
-    font-size: 13px;
+    font-size: 15px;
     padding: 10px;
   }
 }
@@ -1957,63 +1957,4 @@ body{
   margin-top: 10px;
   padding:10px;
  }
- .names{
-display: flex;
-flex-direction: row;
-justify-content: center;
-padding: 5px;
- }
-.name{
-  color: #9742ff;
-}
-#heart {
-  width: 30px;
-  height: 30px;
-  background-color: #9742ff;
-  margin: 20px auto; 
-  position: relative;
-  transform: rotate(45deg);
-  animation: example 0.3s linear 1s infinite alternate;
-  z-index: 0;
-}
-#heart:after,
-#heart:before {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  position: absolute;
-  content: "";
-  background-color: #9742ff;
-  box-shadow: 0 0 7px #b27cf5(213, 9, 60, 1);
-  animation: examp 0.5s linear 1s infinite alternate;
-}
-#heart:after {
-  top: 0;
-  left: -15px; 
-  z-index: 2;
-}
-#heart:before {
-  top: -15px;
-  right: 0;
-  z-index: -1;
-}
-
-@keyframes example {
-  0% {
-    transform: scale(1, 1) rotate(45deg);
-    box-shadow: 0 0 7px #b27cf5(213, 9, 60, 1);
-  }
-  100% {
-    transform: scale(1.1, 1.1) rotate(45deg);
-    box-shadow: 0 0 7px #5a259c(213, 9, 60, 1);
-  }
-}
-
-@keyframes examp {
-  0% {
-    box-shadow: 0 0 7px #b27cf5(213, 9, 60, 1);
-  }
-  100% {
-    box-shadow: 0 0 7px #5a259c(213, 9, 60, 1);
-  }
-}
+ 
