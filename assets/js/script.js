@@ -173,3 +173,70 @@ document.getElementById('read-more3').addEventListener('click', function() {
 });
 
 
+const canvas = document.getElementById('Matrix');
+const context = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+function isMobileView() {
+  return window.innerWidth <= 768; 
+}
+
+
+function hideCanvasOnMobile() {
+  var canvas = document.getElementById('Matrix');
+  if (canvas && isMobileView()) {
+    canvas.style.display = 'none';
+  } else {
+    canvas.style.display = 'block';
+  }
+}
+
+
+window.addEventListener('resize', function() {
+  hideCanvasOnMobile();
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  hideCanvasOnMobile();
+});
+
+const katakana = '01012301780101105601058901023045620210500012087502364012587010398012501228010102101030563250';
+const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const nums = '0123456789';
+
+const alphabet = katakana + latin + nums;
+
+const fontSize = 16;
+const columns = canvas.width/fontSize;
+
+const rainDrops = [];
+
+
+for( let x = 0; x < columns; x++ ) {
+	rainDrops[x] = 1;
+}
+
+const draw = () => {
+	context.fillStyle = 'rgba(0, 0, 0, 0.09)';
+	context.fillRect(0, 0, canvas.width, canvas.height);
+	
+	context.fillStyle = '#9742ff';
+	context.font = fontSize + 'px monospace';
+
+	for(let i = 0; i < rainDrops.length; i++)
+	{
+		const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+		context.fillText(text, i*fontSize, rainDrops[i]*fontSize);
+		
+		if(rainDrops[i]*fontSize > canvas.height && Math.random() > 0.975){
+			rainDrops[i] = 0;
+        }
+		rainDrops[i]++;
+	}
+};
+
+setInterval(draw, 30);
+
+

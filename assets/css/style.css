@@ -419,17 +419,7 @@ font-size:6.7rem;
   padding-block-start: 170px;
   text-align: center;
 }
-.matrix
-{
-  padding:50px;
-  background: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmFtcGtrbmVoOW5zM2ltcm9oMDZwdXJnbXJqMmR1d25vNXB3eHlwbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Mvz8UJefhQm6oRDyl4/giphy.gif")100px 100px/cover repeat;
-  animation: animate-bg 50s infinite linear;
-}
-@keyframes  animate-bg {
-  100% {
-    background-position: 200% 200%;
-  }
-}
+
 .hero .section-subtitle { letter-spacing: 5px; }
 
 .hero-title { margin-block: 20px 25px; }
@@ -1215,7 +1205,7 @@ ion-icon {
    * HERO
    */
 
-  .hero { padding-block-start: 250px; }
+  .hero { padding-block-start: 0px; }
 
   .hero-banner-bg { transform: scale(1.2); }
 
@@ -1223,6 +1213,33 @@ ion-icon {
     max-width: max-content;
     margin-inline: auto;
   }
+  @media screen and (max-width: 660px) {
+    
+    .hero { padding-block-start: 10px; }
+  }
+
+ #what
+ {
+  margin-top: 10%;
+ }
+ 
+  .container {
+    position: relative; 
+    z-index: 2; 
+    padding: 20px; /* Example padding */
+    text-align: center;
+  }
+  
+  #Matrix {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Lower z-index to be behind content */
+    width: 100%;
+    height: 630px; /* Set canvas height */
+  }
+  
+
 
 
 
@@ -1380,77 +1397,77 @@ h1 {
     margin-bottom: 0; 
     font-family: "Oxanium", sans-serif;
 }
+
 .slider {
-  height: 250px;
-  margin: auto;
-  position: relative;
-  width: 100%;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-  margin-top: 20px; 
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    margin-top: 20px; 
 }
 
 .slide-track {
-  display: flex;
-  width: calc(350px * 18);
-  animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 18);
+    animation: scroll 40s linear infinite;
 }
 
 .slide-track:hover {
-  animation-play-state: paused;
+    animation-play-state: paused;
 }
 
 @keyframes scroll {
-  0% {
-      transform: translateX(0);
-  }
-  100% {
-      transform: translateX(calc(-250px * 9));
-  }
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
 }
 
 .slide {
-  height: 250px; /* Adjust to fit your image height */
-  display: flex;
-  align-items: center;
-  padding: 15px;
-  perspective: 100px;
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
 }
 
 .slide img {
-  max-width: 100%;
-  max-height: 100%;
-  transition: transform 1s;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3), 0 6px 20px rgba(255, 255, 255, 0.3);
-  object-fit: contain; /* Ensures images retain their aspect ratio */
+    width: 100%;
+    height: 160px;
+    transition: transform 1s;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3), 0 6px 20px rgba(255, 255, 255, 0.3);
 }
 
 .slide img:hover {
-  transform: translateZ(20px);
+    transform: translateZ(20px);
 }
 
 .slider::before,
 .slider::after {
-  content: '';
-  height: 100%;
-  position: absolute;
-  width: 15%;
-  z-index: 2;
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
 }
 
 .slider::before {
-  left: 0;
-  top: 0;
+    left: 0;
+    top: 0;
 }
 
 .slider::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
 }
-
-.gallery-header {
+.gallery-header{
   display: inline;
 }
 
@@ -1967,4 +1984,5 @@ body{
   margin-top: 10px;
   padding:10px;
  }
+ 
  
