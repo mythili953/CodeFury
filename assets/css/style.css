@@ -1212,36 +1212,6 @@ ion-icon {
     max-width: max-content;
     margin-inline: auto;
   }
-  @media screen and (max-width: 660px) {
-    
-    .hero { padding-block-start: 10px; }
-  }
-
- #what
- {
-  margin-top: 10%;
- }
- 
-  .container {
-    position: relative; 
-    z-index: 2; 
-    padding: 20px; /* Example padding */
-    text-align: center;
-  }
-  
-  #Matrix {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0; /* Lower z-index to be behind content */
-    width: 100%;
-    height: 630px; /* Set canvas height */
-  }
-  
-
-
-
-
   /**
    * UPCOMING
    */
