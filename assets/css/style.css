@@ -418,10 +418,11 @@ font-size:6.7rem;
   padding-block-start: 170px;
   text-align: center;
 }
+
 .matrix
-{
+{ margin-top: 10%;
   padding:50px;
-  background: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmFtcGtrbmVoOW5zM2ltcm9oMDZwdXJnbXJqMmR1d25vNXB3eHlwbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Mvz8UJefhQm6oRDyl4/giphy.gif")100px 100px/cover repeat;
+  background: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWNkYm9nbnlzdmNvYWtiNjVkdHJja2E4czNpMjlheW14cmxiZ2MxeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qm6SPt8RHTbqnQnenp/giphy.gif")100px 100px/cover repeat;
   animation: animate-bg 50s infinite linear;
 }
 @keyframes  animate-bg {
