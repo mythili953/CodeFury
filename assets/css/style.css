@@ -396,14 +396,14 @@ font-size:6.7rem;
 }
 
 .navbar-link {
-  padding: 12px 25px;
+  padding: 12px 45px;
   text-transform: uppercase;
   font-size: var(--fontSize-7);
   font-weight: var(--weight-semiBold);
   color: var(--text-white);
 }
 
-.navbar-item { border-block-start: 1px solid var(--border-space-cadet); }
+/* .navbar-item { border-block-start: 1px solid var(--border-space-cadet);padding-left: 20px; } */
 
 .navbar-item:last-child { border-block-end: 1px solid var(--border-space-cadet); }
 
@@ -672,7 +672,9 @@ ion-icon {
 }
 
 .news-card {
-  background-image: var(--gradient-4);
+  /* background-image: var(--gradient-4); */
+  background-color: #000000;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3), 0 6px 20px rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   margin: auto;
   margin-left: auto;
@@ -823,9 +825,11 @@ ion-icon {
 
      
       .news-card {
-          background-image: var(--gradient-4);
+          /* background-image: var(--gradient-4); */
+          background-color: #000000;
+          box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3), 0 6px 20px rgba(255, 255, 255, 0.3);
           border-radius: 30px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
           overflow: hidden;
           max-height: 15500px;
           
@@ -958,7 +962,7 @@ ion-icon {
    * HEADER
    */
 
-  .header .logo img { width: 160px; }
+  .header .logo img { width: 200px; }
 
 
 
@@ -1373,77 +1377,80 @@ h1 {
 }
 
 .slider {
-    height: 250px;
-    margin: auto;
-    position: relative;
-    width: 90%;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-    margin-top: 20px; 
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  margin-top: 20px; 
 }
 
 .slide-track {
-    display: flex;
-    width: calc(250px * 18);
-    animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(270px * 18); /* Adjusted width calculation */
+  animation: scroll 40s linear infinite;
 }
 
 .slide-track:hover {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 @keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-250px * 9));
-    }
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(calc(-270px * 9)); 
+  }
 }
 
 .slide {
-    height: 200px;
-    width: 250px;
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    perspective: 100px;
+  height: 200px;
+  width: 270px; 
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+  margin-right: 0px; 
 }
 
 .slide img {
-    width: 100%;
-    height: 160px;
-    transition: transform 1s;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3), 0 6px 20px rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: 160px;
+  transition: transform 1s;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3), 0 6px 20px rgba(255, 255, 255, 0.3);
 }
 
 .slide img:hover {
-    transform: translateZ(20px);
+  transform: translateZ(10px);
 }
 
 .slider::before,
 .slider::after {
-    content: '';
-    height: 100%;
-    position: absolute;
-    width: 15%;
-    z-index: 2;
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
 }
 
 .slider::before {
-    left: 0;
-    top: 0;
+  left: 0;
+  top: 0;
 }
 
 .slider::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
 }
+
 .gallery-header{
-  display: inline;
+display: inline;
 }
+
 
 /* CSS for FAQ */
 /* FAQ Section Styling */
@@ -1616,7 +1623,7 @@ section {
 }
 .title-cnt span{
   display: block;
-  font-size: 2rem;
+  font-size: 3rem;
   letter-spacing: 2 rem;
   display: inline;
 }
@@ -1649,13 +1656,14 @@ section {
       max-width: 150px;
   }
   .title-cnt{
-      font-size: 1.5rem;
+      font-size: 2rem;
       line-height: 3.5rem;
       margin: 10px 0 px;
+      padding-right: 90px;
   }
       .title-cnt span{
           font-size: 2rem;
-          letter-spacing: 1rem;
+          /* letter-spacing: 1rem; */
       }
   }
 
