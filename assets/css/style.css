@@ -20,6 +20,8 @@
   --gradient-2: linear-gradient(90deg, transparent 0%, #9841ff 50%, transparent 100%);
   --gradient-3: linear-gradient(147deg, #d7d7d7 0%, #353535 74%);
   --gradient-4: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+  --gradient-5: linear-gradient(147deg, #ab6ff3 0%, black 74%);
+  --gradient-6: linear-gradient(160deg,black 0%, #ab6ff3 414%);
   
   
    
@@ -672,9 +674,10 @@ ion-icon {
 }
 
 .news-card {
-  /* background-image: var(--gradient-4); */
-  background-color: #000000;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3), 0 6px 20px rgba(255, 255, 255, 0.3);
+  background-image: var(--gradient-6);
+  /* background-color: #000000; */
+  /* background-image: linear-gradient(45deg,#9742ff,black); */
+  box-shadow: 0 14px 18px #9742ff;
   border-radius: 20px;
   margin: auto;
   margin-left: auto;
@@ -1274,7 +1277,13 @@ ion-icon {
 }
 .timeline ul li {
   padding: 20px;
-  background-image: var(--gradient-4);
+  background-image: var(--gradient-5);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3), 0 6px 20px rgba(255, 255, 255, 0.3); 
+  /* background: linear-gradient(
+        147deg, 
+        black 60%, 
+        #bc91f0 100% 
+    ); */
   color: white;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -1378,7 +1387,7 @@ h1 {
 
 .slider {
   height: 250px;
-  margin: auto;
+  /* margin: auto; */
   position: relative;
   width: 90%;
   display: grid;
@@ -1389,7 +1398,7 @@ h1 {
 
 .slide-track {
   display: flex;
-  width: calc(270px * 18); /* Adjusted width calculation */
+  width: calc(600px * 18); /* Adjusted width calculation */
   animation: scroll 40s linear infinite;
 }
 
@@ -1408,16 +1417,17 @@ h1 {
 
 .slide {
   height: 200px;
-  width: 270px; 
+  width: 290px; 
   display: flex;
   align-items: center;
-  padding: 15px;
+  padding: 0px;
   perspective: 100px;
-  margin-right: 0px; 
+  margin-right: 40px; 
+  margin-left: 40px;
 }
 
 .slide img {
-  width: 100%;
+  width: 120%;
   height: 160px;
   transition: transform 1s;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3), 0 6px 20px rgba(255, 255, 255, 0.3);
