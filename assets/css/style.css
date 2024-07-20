@@ -1783,8 +1783,8 @@ section {
   }
 
   .dino__game__iframe {
-    width: 300px;
-    height: 200px; /* Adjust height for smaller screens */
+    width: 350px;
+    height: 280px;  /* Adjust height for smaller screens */
   }
 }
 /* css for contacts */
