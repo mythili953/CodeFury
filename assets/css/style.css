@@ -1752,6 +1752,41 @@ section {
     margin-bottom: 80px;
 }
 
+
+/*dino*/
+
+.dino__game__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.dino__game.container {
+  width: 100%;
+  max-width: 900px; /* Maximum width of the game container */
+}
+
+.dino__game__iframe {
+  width: 800px;
+  height: 300px; /* Adjust height as needed */
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .h2.section-title {
+    font-size: 1.5em;
+  }
+
+  .dino__game__iframe {
+    width: 300px;
+    height: 200px; /* Adjust height for smaller screens */
+  }
+}
 /* css for contacts */
 .contact img
 {
