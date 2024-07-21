@@ -172,6 +172,17 @@ document.getElementById('read-more3').addEventListener('click', function() {
   }
 });
 
+document.getElementById('read-more4').addEventListener('click', function() {
+  const content = document.getElementById('content4');
+  if (content.style.display === 'none' || content.style.display === '') {
+      content.style.display = 'block';
+      this.textContent = 'Close';
+  } else {
+      content.style.display = 'none';
+      this.textContent = 'Here are the rules:';
+  }
+});
+
 
 const canvas = document.getElementById('Matrix');
 const context = canvas.getContext('2d');
